@@ -85,7 +85,8 @@ header {
     color: #fff;
     text-decoration: underline;
 }
-#socials a{
+
+#socials a {
     text-decoration: none;
     color: #FE7743;
     font-size: 20px;
@@ -193,6 +194,7 @@ header {
     margin-top: 30px;
 }
 
+
 .card {
     width: 300px;
     height: 200px;
@@ -209,17 +211,42 @@ header {
 .card:hover {
     background-color: #273F4F;
     color: #ffffff;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+.ri-arrow-right-line {
+    position: relative;
+    bottom: 3px;
+    left: 35%;
+    font-size: 20px;
+
+}
+
+/* .ri-arrow-right-line:hover {
+
+    position: relative;
+    bottom: 3px;
+    left: 80%;
+    font-size: 20px;
+    
+} */
+
 .card button {
-    transition: all 0.3s ease;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background-color: #FE7743;
+    color: white;
+    border: 2px solid #FE7743;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    transition: all 0.1s ease;
 }
 
 .card:hover button {
-    background-color: #FE7743;
-    color: white;
+    background-color: hsl(0, 0%, 100%);
+    border-color: #fe78438f;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .skills {
@@ -428,7 +455,8 @@ header {
     display: inline-block;
 }
 
-.btn-secondary:hover, .btn-outline:hover {
+.btn-secondary:hover,
+.btn-outline:hover {
     transform: translateY(-2px);
     background-color: #FE7743;
     border-color: #FE7743;
@@ -463,7 +491,8 @@ header {
     margin: 0 auto;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -471,7 +500,8 @@ header {
     transition: all 0.3s ease;
 }
 
-#contact input:focus, #contact textarea:focus {
+#contact input:focus,
+#contact textarea:focus {
     outline: none;
     border-color: #FE7743;
     box-shadow: 0 0 0 2px rgba(254, 119, 67, 0.2);
@@ -537,7 +567,7 @@ footer {
         position: static;
         right: 0;
     }
-    
+
     .text-content h1 {
         font-size: 2.5rem;
     }
@@ -548,22 +578,23 @@ footer {
         flex-direction: column-reverse;
         margin-bottom: 0;
     }
-    
-    .left, .right {
+
+    .left,
+    .right {
         flex: 1 1 100%;
     }
-    
+
     .text-content {
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .btn-cta {
         justify-content: center;
     }
-    
+
     .works-section {
         margin-top: 0px;
     }
@@ -573,56 +604,57 @@ footer {
     header {
         padding: 20px;
     }
-    
+
     .nav-links {
         display: none;
     }
-    
+
     #icon {
         display: block;
     }
-    
+
     .hero-section {
         top: 80px;
         padding: 20px;
     }
-    
+
     .text-content h1 {
         font-size: 2.2rem;
     }
-    
+
     .name-vishal {
         font-size: 70px !important;
     }
-    
+
     .text-content p {
         font-size: 1rem;
     }
-    
+
     .works-section {
         padding: 50px 0;
     }
-    
+
     .card-container {
         padding: 40px 20px;
     }
-    
-    .skills, .about-sec {
+
+    .skills,
+    .about-sec {
         padding: 80px 20px;
     }
-    
+
     .about-content {
         flex-direction: column;
     }
-    
+
     .about-text {
         text-align: center;
     }
-    
+
     .interests-grid {
         justify-content: center;
     }
-    
+
     .about-cta {
         justify-content: center;
     }
@@ -632,151 +664,179 @@ footer {
     .text-content h1 {
         font-size: 1.8rem;
     }
-    
+
     .name-vishal {
         font-size: 50px !important;
     }
-    
+
     .btn-cta {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .btn-cta a {
         width: 100%;
     }
-    
+
     .btn-cta button {
         width: 100%;
     }
-    
+
     .card {
         width: 100%;
     }
-    
+
     .about-image {
         padding: 0 20px;
     }
-    
+
     .image-placeholder {
         width: 200px;
         height: 200px;
         border-radius: 100px;
     }
-    
+
     .interest-item {
         flex: 1 1 100%;
         justify-content: center;
     }
-    
+
     .about-cta {
         flex-direction: column;
     }
-    
-    .btn-secondary, .btn-outline {
+
+    .btn-secondary,
+    .btn-outline {
         width: 100%;
         text-align: center;
     }
 }
-@media (max-width:759px){
+
+@media (max-width:759px) {
     header {
         margin-left: 40px;
         font-size: medium;
     }
 
-    
+
 }
-@media (max-width:796px){
+
+@media (max-width:796px) {
     header {
         margin-left: 50px;
         font-size: small;
         gap: 30px;
     }
+
     .logo {
         font-size: 1.3rem;
     }
 
 }
-@media (max-width:769px){
+
+@media (max-width:769px) {
     header {
         margin-left: 50px;
         align-items: center;
     }
 }
-@media (max-width:726px){
+
+@media (max-width:726px) {
     header {
         margin-left: 40px;
         align-items: center;
     }
 }
-@media (min-width:438px){
+
+@media (min-width:438px) {
     header {
         margin-left: 24px;
         align-items: center;
     }
 }
-@media (min-width:375px){
+
+@media (min-width:375px) {
     header {
         margin-left: 20px;
         align-items: center;
     }
 }
-@media (min-width:360px){
+
+@media (min-width:360px) {
     header {
         margin-left: 20px;
         align-items: center;
     }
 }
-@media (min-width:768px){
+
+@media (min-width:768px) {
     header {
         margin-left: 45px;
         align-items: center;
     }
 }
-@media (min-width:820px){
-    header,.nav-links {
+
+@media (min-width:820px) {
+
+    header,
+    .nav-links {
         font-size: smaller;
-        gap: 17px;
+        gap: 30px;
         margin-left: 45px;
         align-items: center;
     }
 }
-@media (min-width:1024px){
-    header,.nav-links {
+
+@media (min-width:1024px) {
+
+    header,
+    .nav-links {
         font-size: smaller;
-        gap: 17px;
+        gap: 30px;
         margin-left: 55px;
         align-items: center;
     }
 }
-@media (min-width:912px){
-    header,.nav-links {
+
+@media (min-width:912px) {
+
+    header,
+    .nav-links {
         font-size: smaller;
-        gap: 17px;
+        gap: 30px;
         margin-left: 50px;
         align-items: center;
     }
 }
-@media (min-width:514px){
-    header,.nav-links {
+
+@media (min-width:514px) {
+
+    header,
+    .nav-links {
         font-size: smaller;
-        gap: 17px;
+        gap: 30px;
         margin-left: 29px;
         align-items: center;
     }
 }
-@media (min-width:344px){
-    header,.nav-links {
+
+@media (min-width:344px) {
+
+    header,
+    .nav-links {
         font-size: smaller;
-        gap: 17px;
+        gap: 30px;
         margin-left: 18px;
         align-items: center;
     }
 }
-@media (min-width:853px){
-    header,.nav-links {
+
+@media (min-width:853px) {
+
+    header,
+    .nav-links {
         font-size: smaller;
-        gap: 17px;
+        gap: 30px;
         margin-left: 47px;
         align-items: center;
     }
