@@ -841,3 +841,7 @@ footer {
         align-items: center;
     }
 }
+.card-container a {
+    text-decoration: none;
+    color: #ddd;
+}
